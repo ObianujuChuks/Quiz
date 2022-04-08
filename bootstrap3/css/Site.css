@@ -1,0 +1,75 @@
+﻿.navbar{
+    border-radius:0;
+}
+
+.bg-green-card {
+    background-color: darkgreen;
+    color: #fff;
+    padding: 5rem 2rem;
+    height: 46rem;
+}
+
+    .bg-green-card h3 {
+        font-size: 5rem;
+    }
+
+    .bg-green-card p {
+        font-size: 2rem;
+        color: #fff;
+        line-height:30px;
+    }
+
+        .bg-green-card p > a {
+            border: 2px solid #fff;
+            padding: 1rem 1rem;
+            color: #fff;
+            cursor: pointer;
+        }
+        .bg-green-card a:hover{
+            text-decoration:none;
+            background-color:rgba(245, 238, 238, 0.63);
+        }
+
+.bg-show-banner img {
+    height: 46rem;
+    width: 100%;
+}
+
+.mt-5 {
+    margin-top: 5%;
+}
+.proof-of-work{
+    padding:5%;
+}
+.services,.proof-of-work h3{
+    font-size:5rem;
+    font-weight:bolder;
+}
+.services,.proof-of-work p{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+.services hr{
+    width:10%;
+    margin:1% auto;
+    background-color:black;
+    height:.3rem;
+}
+.proof-of-work{
+    background-image:url("../images/intro-bg.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:#fff;
+}
+.bg-green-card  ul li{
+    font-weight:bold;
+    line-height:30px;
+}
+.form{
+    background-color:lightgreen;
+    padding:2rem 3rem;
+}
+.btn{
+    padding: 1rem 2rem;
+    background-color:greenyellow;
+}

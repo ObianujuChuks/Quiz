@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="bootstrap3/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="bootstrap3/css/HBSQuiz.css" type="text/css" rel="stylesheet" />
+    <link href="bootstrap3/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <title>HBS ~ QUIZ</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-md-12 slow-show">
+            <button class=" btn btn-dark-light pull-right" onclick="DarkMode();"><i id="icon" class="fa fa-moon-o"></i></button>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class=" main-card col-md-12 slow-show">
+                    <h3>HBS <span>Quiz</span></h3>
+                    <p>
+                        Enroll to Participate
+                    </p>
+                    <span id="errormsg"></span>
+                    <input type="text" class="form-control" placeholder="full name" id="name" />
+                    <a href="#" class="btn btn-light" onclick="ValidateAccess();">Start</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap3/js/jquery.min.js"></script>
+    <script src="bootstrap3/js/bootstrap.min.js"></script>
+    <script src="bootstrap3/js/Quiz.js"></script>
+</body>
+</html>

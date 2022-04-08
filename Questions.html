@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="bootstrap3/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="bootstrap3/css/HBSQuiz.css" type="text/css" rel="stylesheet" />
+    <link href="bootstrap3/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <title>HBS ~ QUIZ</title>
+</head>
+<body onload="LoadQuestions();">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn pull-right btn-dark-light" onclick="DarkMode();"><i id="icon" class="fa fa-moon-o"></i></button>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="row">
+                <div class=" main-card col-md-12 slow-show">
+                    <h4 id="Username" class="h3 text-center">UJU Girl</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Score</span>
+                            <span id="TotalScore" class="label label-light">0</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span>Number of Questions</span>
+                            <span id="TotalQNo" class="label label-light">10</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="closeQ">
+                                <div class="form-group">
+                                    <label class="h3">Question</label>&nbsp;&nbsp;<span id="QNo" class="h3"><b> 1</b></span>
+                                    <textarea rows="6" readonly id="Question"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="options">
+                                                <input type="radio" name="options" value="A" id="optionA" onclick="CollectAns(this.value);" />A
+                                                <label for="optionA" id="optionAValue"> </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="options">
+                                                <input type="radio" name="options" value="B" id="optionB" onclick="CollectAns(this.value);" />B
+                                                <label for="optionB" id="optionBValue"> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:1%">
+                                        <div class="col-md-6">
+                                            <div class="options">
+                                                <input type="radio" name="options" value="C" id="optionC" onclick="CollectAns(this.value);" />C
+                                                <label for="optionC" id="optionCValue"> </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="options">
+                                                <input type="radio" name="options" value="D" id="optionD" onclick="CollectAns(this.value);" />D
+                                                <label for="optionD" id="optionDValue"> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+
+
+                                <div class="form-group">
+                                    <button class="btn btn-light" onclick="LoadQuestions(); ShowScore();">Next</button>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+    <script src="bootstrap3/js/jquery.min.js"></script>
+    <script src="bootstrap3/js/bootstrap.min.js"></script>
+    <script src="bootstrap3/js/Quiz.js"></script>
+</body>
+</html>
